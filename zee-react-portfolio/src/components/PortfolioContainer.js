@@ -6,10 +6,10 @@ import Header from './Header'
 import Footer from './Footer'
 
 export default function ProfileContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
+        if (currentPage === 'About') {
             return <About />
         }
         if (currentPage === 'Contact') {
@@ -24,7 +24,7 @@ export default function ProfileContainer() {
 
     return (
         <div>
-            <Header />
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
         </div>

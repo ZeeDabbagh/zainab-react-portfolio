@@ -9,7 +9,7 @@ function Header() {
       <header>
         <h1 className="title">Zainab's Portfolio</h1>
         {/* insert image here? */}
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Nav />
       </header>
     </div>
   );
