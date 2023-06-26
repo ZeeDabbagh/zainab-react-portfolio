@@ -1,13 +1,31 @@
 import React from "react";
 import Nav from "./Nav";
+import '../styles/Header.css'
+import background from '../assets/images/flowers-2.jpeg'
 
-// import on insert styles
+const styles = {
+  headerStyles: {
+    background: "black",
+    color: "#fff",
+    margin: ".5rem",
+    backgroundImage: `url(${background})`,
+    height: '25vh',
+    backgroundSize: 'cover'
+  },
+  headingStyles: {
+    fontSize: '2rem',
+    textAlign: 'center',
+    padding: '25px 25px 25px 5px',
+    color: 'rgba(255, 255, 255, 0.9)'
+  }
+}
+
 
 function Header({currentPage, handlePageChange}) {
   return (
     <div>
-      <header>
-        <h1 className="title">Zainab's Portfolio</h1>
+      <header style={styles.headerStyles} className="header">
+        <h1 style={styles.headingStyles} className="title">Zainab Dabbagh</h1>
         {/* insert image here? */}
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>

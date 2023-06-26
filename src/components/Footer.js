@@ -1,23 +1,40 @@
 import React from 'react';
+import Flowers from '../assets/images/flowers-2.jpeg'
+import '../styles/Footer.css'
+import { getByDisplayValue } from '@testing-library/react';
+
+const styles = {
+    footerStyles: {
+            textAlign: 'center',
+            fontSize: 'larger',
+            backgroundImage: `url(${Flowers})`,
+            backgroundRepeat: 'no-repeat',
+            marginTop: '25px',
+            backgroundSize: 'cover',
+            height: '15vh',
+            alignItems: 'center'
+         
+        }
+    }
 
 function Footer() {
     return (
-        <footer>
+        <footer style={styles.footerStyles}>
             <ul>
-                <li>
-                    <a href='https://github.com/ZeeDabbagh/'>
+                <li style={{display: 'inline-block', marginTop: '20px'}}>
+                    <a className='footer' href='https://github.com/ZeeDabbagh/'>
                         {/* github icon */}
                         Github
                     </a>
                 </li>
-                <li>
-                    <a href='https://www.linkedin.com/in/zaldabbagh/'>
+                <li style={{display: 'inline-block'}}>
+                    <a className='footer' href='https://www.linkedin.com/in/zaldabbagh/'>
                         {/* linkedin icon */}
                         LinkedIn
                     </a>
                 </li>
-                <li>
-                    <a href=' https://open.spotify.com/user/12138290326'>
+                <li style={{display: 'inline-block'}}>
+                    <a className='footer' href=' https://open.spotify.com/user/12138290326'>
                         {/* spotify icon */}
                         spotify
                     </a>

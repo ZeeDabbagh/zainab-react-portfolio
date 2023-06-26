@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import About from './pages/About'
 import Contact from "./pages/Contact";
 import Projects from './pages/ProjectList'
+import Resume from "./pages/Resume";
 import Header from './Header'
 import Footer from './Footer'
 
 export default function ProfileContainer({currentPage, handlePageChange}) {
-   // const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
         if (currentPage === 'About') {
@@ -18,10 +18,10 @@ export default function ProfileContainer({currentPage, handlePageChange}) {
         if (currentPage === 'Projects') {
             return <Projects />;
         }
+        if (currentPage === 'Resume') {
+            return <Resume />;
+        }
     }
-
-    //const handlePageChange = (page) => setCurrentPage(page)
-
     return (
         <div>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
@@ -29,4 +29,7 @@ export default function ProfileContainer({currentPage, handlePageChange}) {
             <Footer />
         </div>
     )
-}
+
+    }
+
+
