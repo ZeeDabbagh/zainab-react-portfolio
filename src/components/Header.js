@@ -3,13 +3,13 @@ import Nav from "./Nav";
 
 // import on insert styles
 
-function Header() {
+function Header({currentPage, handlePageChange}) {
   return (
     <div>
       <header>
         <h1 className="title">Zainab's Portfolio</h1>
         {/* insert image here? */}
-        <Nav />
+        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
     </div>
   );

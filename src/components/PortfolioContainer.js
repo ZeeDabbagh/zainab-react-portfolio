@@ -5,8 +5,8 @@ import Projects from './pages/ProjectList'
 import Header from './Header'
 import Footer from './Footer'
 
-export default function ProfileContainer() {
-    const [currentPage, setCurrentPage] = useState('About');
+export default function ProfileContainer({currentPage, handlePageChange}) {
+   // const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
         if (currentPage === 'About') {
@@ -20,7 +20,7 @@ export default function ProfileContainer() {
         }
     }
 
-    const handlePageChange = (page) => setCurrentPage(page)
+    //const handlePageChange = (page) => setCurrentPage(page)
 
     return (
         <div>
