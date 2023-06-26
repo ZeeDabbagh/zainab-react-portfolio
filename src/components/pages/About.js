@@ -83,3 +83,27 @@ export default function About() {
     </div>
   );
 }
+
+
+
+{/* <div className="container" style={{paddingTop: '20px'}}>
+
+<div className="row">
+
+    {projects.map((project, index) => (
+        <div className="col-4 d-flex mb-5" key={index}>
+            <img
+            src={project.image}
+            alt={project.name}
+            />
+            <h5>{project.name}</h5>
+            <p>{project.description}</p>
+
+            <p><small>{project.technologies}</small></p>
+
+        </div>
+    ))}
+
+</div>
+
+</div> */}

@@ -12,7 +12,9 @@ const styles = {
             marginTop: '25px',
             backgroundSize: 'cover',
             height: '15vh',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginLeft: '9px',
+            marginRight: '9px'
          
         }
     }
