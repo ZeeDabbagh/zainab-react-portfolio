@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/zainab-react-portfolio/static/css/main.10daca73.css",
+    "main.js": "/zainab-react-portfolio/static/js/main.a80ded7a.js",
+    "static/media/flowers-2.jpeg": "/zainab-react-portfolio/static/media/flowers-2.f3664a2255eac0045c9d.jpeg",
+    "static/media/me.png": "/zainab-react-portfolio/static/media/me.30da952ed3622c9bd764.png",
+    "static/media/party-logo.png": "/zainab-react-portfolio/static/media/party-logo.1bd7f1cbe208430e05f9.png",
+    "static/media/password-logo.png": "/zainab-react-portfolio/static/media/password-logo.0e760e6dabede5a42a66.png",
+    "static/media/ecommerce-logo.png": "/zainab-react-portfolio/static/media/ecommerce-logo.323eb6247b348d9e7f93.png",
+    "static/media/socialnetwork-logo.png": "/zainab-react-portfolio/static/media/socialnetwork-logo.8c727cb33ff56e8c6299.png",
+    "index.html": "/zainab-react-portfolio/index.html",
+    "main.10daca73.css.map": "/zainab-react-portfolio/static/css/main.10daca73.css.map",
+    "main.a80ded7a.js.map": "/zainab-react-portfolio/static/js/main.a80ded7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10daca73.css",
+    "static/js/main.a80ded7a.js"
+  ]
+}
