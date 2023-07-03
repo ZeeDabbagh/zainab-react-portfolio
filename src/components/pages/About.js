@@ -1,38 +1,11 @@
 import React from "react";
-import Headshot from '../../assets/images/me.png'
-
-const styles = {
-  divBackground: {
-    backgroundColor: 'pink',
-    marginLeft: ".5rem",
-    marginRight: ".5rem",
-    
-  },
-  cardStyles: {
-    width: '60rem',
-    marginLeft: '8px',
-    marginBottom: '20px',
-    display: 'inline-block',
-    backgroundColor: 'pink', 
-    color:'whitesmoke',
-    border:'none'
-  },
-  headingStyles: {
-    color: 'whitesmoke'
-  },
-  cardBackground: {
-    backgroundColor: 'rgba(0,0,0,0.5)'
-  }
-}
+import Headshot from "../../assets/images/me.png";
 
 export default function About() {
   return (
-    <div style={styles.divBackground}>
-      <div
-        className="card"
-        style={styles.cardStyles}
-      >
-        <div className="card-body" style={styles.cardBackground} >
+    <div className="justify-content-top" style={{display: 'inline-block'}}>
+      <div className="card col-7" style={{display: 'inline-block'}}>
+        <div className="card-body">
           <h3 className="card-title">About me!</h3>
           <h5 className="card-subtitle mb-2 mt-3">Hi! I'm Zainab</h5>
           <p className="card-text">
@@ -65,16 +38,16 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div class="card col-4 mx-4" style={{width:"18rem", display: 'inline-block', backgroundColor: 'pink', marginTop: '10px', border: 'none'}}>
+      <div class="card col-4 mx-4" style={{display: 'inline-block', marginTop: '0px', textAlign: 'center'}}>
         <img
           class="card-img-top"
           src={Headshot}
           alt="me drinking orange chicken"
-          style={{backgroundColor: 'pink'}}
+          style={{ width: "50%", paddingLeft: "14px" }}
         />
-        <div class="card-body" style={{backgroundColor: "#FCBACB"}}>
-          <p class="card-text text-white px-5" style={styles.cardBackground}>
-          What's that? You want to know a fun fact about me? Well ok! I lived
+        <div class="card-body">
+          <p class="card-text">
+            What's that? You want to know a fun fact about me? Well ok! I lived
             in 7 different countries, 3 in the Middle East, 3 in Europe and the
             US!
           </p>
@@ -83,27 +56,3 @@ export default function About() {
     </div>
   );
 }
-
-
-
-{/* <div className="container" style={{paddingTop: '20px'}}>
-
-<div className="row">
-
-    {projects.map((project, index) => (
-        <div className="col-4 d-flex mb-5" key={index}>
-            <img
-            src={project.image}
-            alt={project.name}
-            />
-            <h5>{project.name}</h5>
-            <p>{project.description}</p>
-
-            <p><small>{project.technologies}</small></p>
-
-        </div>
-    ))}
-
-</div>
-
-</div> */}

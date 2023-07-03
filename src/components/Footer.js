@@ -9,6 +9,7 @@ const styles = {
             fontSize: 'larger',
             backgroundImage: `url(${Flowers})`,
             backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'bottom',
             marginTop: '25px',
             backgroundSize: 'cover',
             height: '15vh',
@@ -25,19 +26,19 @@ function Footer() {
             <ul>
                 <li style={{display: 'inline-block', marginTop: '20px'}}>
                     <a className='footer' href='https://github.com/ZeeDabbagh/'>
-                        {/* github icon */}
+
                         Github
                     </a>
                 </li>
                 <li style={{display: 'inline-block'}}>
                     <a className='footer' href='https://www.linkedin.com/in/zaldabbagh/'>
-                        {/* linkedin icon */}
+
                         LinkedIn
                     </a>
                 </li>
                 <li style={{display: 'inline-block'}}>
                     <a className='footer' href=' https://open.spotify.com/user/12138290326'>
-                        {/* spotify icon */}
+
                         spotify
                     </a>
                 </li>
